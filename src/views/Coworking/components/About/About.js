@@ -78,8 +78,8 @@ const About = props => {
               <CardBase className={classes.cardBase} withShadow liftUp>
                 <Image
                   src={IMAGES.MOBILE}
-                  alt="..."
-                  className={classes.cardImage}
+                  srcSet={IMAGES.MOBILE}
+                  alt="mobile-app"
                   lazy={false}
                 />
               </CardBase>

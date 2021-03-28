@@ -9,7 +9,8 @@
     "build": "set \"GENERATE_SOURCEMAP=false\" && next build",
     "start": "next start",
     "prettier": "prettier --write '**/*.{js,css,html}'",
-    "postinstall": "npm run assets && npm run leaflet-assets"
+    "postinstall": "npm run assets && npm run leaflet-assets",
+    "export": "npm run build && next export -o _static"
   },
   "eslintConfig": {
     "extends": "react-app"

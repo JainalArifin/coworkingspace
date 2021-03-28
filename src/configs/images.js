@@ -6,7 +6,7 @@ const images = {
   HOME_SLIDER_2: '/images/coworking/slider/home-slider-2.jpeg',
   HOME_SLIDER_3: '/images/coworking/slider/home-slider-3.jpeg',
   // section mobile
-  MOBILE: '/images/coworking/mobile/mobile-app.png',
+  MOBILE: '/images/coworking/section-mobile/app.jpg',
   // section sclable
   SCALABLE_1: '/images/coworking/scalable/section-scalable-1.jpeg',
   SCALABLE_2: '/images/coworking/scalable/section-scalable-2.jpeg',
