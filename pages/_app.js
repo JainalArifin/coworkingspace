@@ -134,10 +134,6 @@ export default function App({ Component, pageProps }) {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
-          property="og:image"
-          content="https://thefront.maccarianagency.com/social.png"
-        />
-        <meta
           property="og:title"
           content="Trackingspace | coworkingspace tegal"
         />
@@ -147,7 +143,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           property="og:url"
-          content="https://thefront.maccarianagency.com/"
+          content="https://www.coworkingspace-tegal.com/"
         />
         <link
           href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"

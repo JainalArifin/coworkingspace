@@ -102,7 +102,6 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
-            content="https://thefront.maccarianagency.com/social.png"
           />
           <meta
             property="og:title"
@@ -114,7 +113,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:url"
-            content="https://thefront.maccarianagency.com/"
+            content="https://www.coworkingspace-tegal.com/"
           />
           <link
             href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
