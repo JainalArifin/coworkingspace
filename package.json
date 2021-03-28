@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && next build",
+    "build": "GENERATE_SOURCEMAP=false next build",
     "start": "next start",
     "prettier": "prettier --write '**/*.{js,css,html}'",
     "assets": "rimraf ./public/images && cp-cli ./node_modules/thefront-assets/images ./public/images",

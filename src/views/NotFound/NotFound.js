@@ -45,7 +45,7 @@ const NotFound = () => {
             title="Uh oh."
             subtitle={
               <span>
-                There’s nothing here, but if you feel this is an error please{' '}
+                Tidak ada apa-apa di sini, tetapi jika Anda merasa ini adalah kesalahan{' '}
                 <LearnMoreLink
                   title="let us know"
                   href="#"
@@ -68,7 +68,7 @@ const NotFound = () => {
                 color="primary"
                 onClick={handleClick}
               >
-                Go Back
+                Kembali
               </Button>,
             ]}
             disableGutter
