@@ -8,119 +8,122 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-            <meta charSet="utf-8" />
-            <link rel="shortcut icon" href="favicon.ico" />
-            <meta
+          <meta charSet="utf-8" />
+          <link rel="shortcut icon" href="favicon.ico" />
+          <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="57x57"
             href="/favicons/trasa-mart.pngpng"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="60x60"
             href="/favicons/trasa-mart.pngpng"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="72x72"
             href="/favicons/trasa-mart.pngpng"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="76x76"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="114x114"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="120x120"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="144x144"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="152x152"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="icon"
             type="image/png"
             sizes="192x192"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="icon"
             type="image/png"
             sizes="32x32"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="icon"
             type="image/png"
             sizes="96x96"
             href="/favicons/trasa-mart.png"
-            />
-            <link
+          />
+          <link
             rel="icon"
             type="image/png"
             sizes="16x16"
             href="/favicons/trasa-mart.png"
-            />
-            <link rel="manifest" href="/manifest.json" />
-            <meta name="msapplication-TileColor" content="#ffffff" />
-            <meta
+          />
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta
             name="msapplication-TileImage"
             content="/favicons/trasa-mart.png"
-            />
-            <meta name="theme-color" content="#ffffff" />
-            <meta
+          />
+          <meta name="theme-color" content="#ffffff" />
+          <meta
             name="description"
-            content="A modern design system for your new landing and web pages."
-            />
-            <meta
+            content="Kami salah satu coworking space yang melakukan GoGreen dengan membuat aplikasi check in dan bisa memantau fasiliator atau mentor sedang berada di tempat kami, memantau event atau agenda yang sedang ada di tempat kami dengan menggunakan aplikasi dimana aplikasi tersebut memiliki QR Code, sekali scan member sudah bisa menikmati fasilitas kami. "
+          />
+          <meta
             name="robots"
             content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-            />
-            <meta property="og:locale" content="en_US" />
-            <meta property="og:type" content="website" />
-            <meta
+          />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="website" />
+          <meta
             property="og:image"
             content="https://thefront.maccarianagency.com/social.png"
-            />
-            <meta
+          />
+          <meta
             property="og:title"
             content="Tracking (TrasaMart Coworking) Space"
-            />
-            <meta
+          />
+          <meta
             property="og:description"
-            content="A modern design system for your new landing and web pages."
-            />
-            <meta property="og:url" content="https://thefront.maccarianagency.com/" />
-            <link
+            content="Kami salah satu coworking space yang melakukan GoGreen dengan membuat aplikasi check in dan bisa memantau fasiliator atau mentor sedang berada di tempat kami, memantau event atau agenda yang sedang ada di tempat kami dengan menggunakan aplikasi dimana aplikasi tersebut memiliki QR Code, sekali scan member sudah bisa menikmati fasilitas kami. "
+          />
+          <meta
+            property="og:url"
+            content="https://thefront.maccarianagency.com/"
+          />
+          <link
             href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
             rel="stylesheet"
-            />
-            <script
+          />
+          <script
             src="https://kit.fontawesome.com/4c273e6d43.js"
             crossOrigin="anonymous"
-            ></script>
+          ></script>
         </Head>
         <body>
           <Main />
@@ -133,7 +136,7 @@ export default class MyDocument extends Document {
 
 // `getInitialProps` belongs to `_document` (instead of `_app`),
 // it's compatible with server-side generation (SSG).
-MyDocument.getInitialProps = async (ctx) => {
+MyDocument.getInitialProps = async ctx => {
   // Resolution order
   //
   // On the server:
@@ -162,7 +165,7 @@ MyDocument.getInitialProps = async (ctx) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
+      enhanceApp: App => props => sheets.collect(<App {...props} />),
     });
 
   const initialProps = await Document.getInitialProps(ctx);
@@ -170,6 +173,9 @@ MyDocument.getInitialProps = async (ctx) => {
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
-    styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
+    styles: [
+      ...React.Children.toArray(initialProps.styles),
+      sheets.getStyleElement(),
+    ],
   };
 };
