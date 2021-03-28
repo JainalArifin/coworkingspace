@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     height: '100%',
     position: 'relative',
-    background: `url(/images/illustrations/contact-cover.svg) no-repeat ${theme.palette.primary.main}`,
+    background: `url(/gambar/illustrations/contact-cover.svg) no-repeat ${theme.palette.primary.main}`,
     overflow: 'hidden',
     minHeight: 400,
     [theme.breakpoints.up('md')]: {

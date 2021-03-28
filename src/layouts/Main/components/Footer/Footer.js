@@ -12,8 +12,8 @@ import {
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-
 import { Image } from 'components/atoms';
+import { IMAGES } from 'configs'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -114,7 +114,7 @@ const Footer = props => {
                   <a href="/" title="trackinng-space">
                     <Image
                       className={classes.logoImage}
-                      src="/images/logos/logo_main.png"
+                      src={IMAGES.LOGO}
                       alt="trackinng-space"
                       lazy={false}
                     />

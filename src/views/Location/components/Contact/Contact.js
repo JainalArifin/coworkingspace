@@ -46,8 +46,8 @@ const Contact = props => {
               <ListItem disableGutters data-aos="fade-up">
                 <ListItemAvatar className={classes.listItemAvatar}>
                   <Avatar
-                    src="/images/illustrations/contact-icon-phone.png"
-                    srcSet="/images/illustrations/contact-icon-phone@2x.png 2x"
+                    src="/gambar/illustrations/contact-icon-phone.png"
+                    srcSet="/gambar/illustrations/contact-icon-phone@2x.png 2x"
                     className={classes.icon}
                   />
                 </ListItemAvatar>
@@ -69,8 +69,8 @@ const Contact = props => {
               <ListItem disableGutters data-aos="fade-up">
                 <ListItemAvatar className={classes.listItemAvatar}>
                   <Avatar
-                    src="/images/illustrations/contact-icon-mail.png"
-                    srcSet="/images/illustrations/contact-icon-mail@2x.png 2x"
+                    src="/gambar/illustrations/contact-icon-mail.png"
+                    srcSet="/gambar/illustrations/contact-icon-mail@2x.png 2x"
                     className={classes.icon}
                   />
                 </ListItemAvatar>
@@ -92,8 +92,8 @@ const Contact = props => {
               <ListItem disableGutters data-aos="fade-up">
                 <ListItemAvatar className={classes.listItemAvatar}>
                   <Avatar
-                    src="/images/illustrations/contact-icon-pin.png"
-                    srcSet="/images/illustrations/contact-icon-pin@2x.png 2x"
+                    src="/gambar/illustrations/contact-icon-pin.png"
+                    srcSet="/gambar/illustrations/contact-icon-pin@2x.png 2x"
                     className={classes.icon}
                   />
                 </ListItemAvatar>
