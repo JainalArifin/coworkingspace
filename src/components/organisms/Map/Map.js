@@ -30,11 +30,11 @@ const Map = props => {
     const L = require('leaflet');
     delete L.Icon.Default.prototype._getIconUrl;
 
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: require('assets/images/leaflet-assets/marker-icon-2x.png'),
-      iconUrl: require('assets/images/leaflet-assets/marker-icon.png'),
-      shadowUrl: require('assets/images/leaflet-assets/marker-shadow.png'),
-    });
+    // L.Icon.Default.mergeOptions({
+    //   iconRetinaUrl: require('assets/images/leaflet-assets/marker-icon-2x.png'),
+    //   iconUrl: require('assets/images/leaflet-assets/marker-icon.png'),
+    //   shadowUrl: require('assets/images/leaflet-assets/marker-shadow.png'),
+    // });
   });
 
   return (
