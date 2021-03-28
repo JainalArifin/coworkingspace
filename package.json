@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && next build",
+    "build": "GENERATE_SOURCEMAP=false next build",
     "start": "next start",
     "prettier": "prettier --write '**/*.{js,css,html}'",
     "export": "npm run build && next export -o _static"
