@@ -12,6 +12,7 @@ import {
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
 import { HeroShaped, Section, CardBase } from 'components/organisms';
+import { IMAGES } from 'configs';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -76,7 +77,7 @@ const About = props => {
             <Grid container alignItems="flex-start" justify="center">
               <CardBase className={classes.cardBase} withShadow liftUp>
                 <Image
-                  src="/images/coworking/home/mobile-app.png"
+                  src={IMAGES.MOBILE}
                   alt="..."
                   className={classes.cardImage}
                   lazy={false}

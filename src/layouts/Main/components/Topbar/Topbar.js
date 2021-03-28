@@ -20,6 +20,7 @@ import { Image } from 'components/atoms';
 import { ModalForm, FormLoginRegister } from 'components/organisms';
 import MyMenu from '../MyMenu';
 import Link from 'next/link';
+import { IMAGES } from 'configs'; 
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -169,7 +170,7 @@ const Topbar = props => {
           <Link href="/" title="tracking-space">
             <Image
               className={classes.logoImage}
-              src="/images/logos/logo_main.png"
+              src={IMAGES.LOGO}
               alt="tracking-space"
               lazy={false}
             />

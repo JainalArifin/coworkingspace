@@ -6,11 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "GENERATE_SOURCEMAP=false next build",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && next build",
     "start": "next start",
     "prettier": "prettier --write '**/*.{js,css,html}'",
-    "assets": "rimraf ./public/images && cp-cli ./node_modules/thefront-assets/images ./public/images",
-    "leaflet-assets": "rimraf ./src/assets/images/leaflet-assets && cp-cli ./node_modules/leaflet/dist/images ./src/assets/images/leaflet-assets",
     "postinstall": "npm run assets && npm run leaflet-assets"
   },
   "eslintConfig": {
