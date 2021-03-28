@@ -109,7 +109,7 @@ const About = props => {
                   target="blank"
                 >
                   <Image
-                    src="/images/mobile-addons/play-store.png"
+                    src="/gambar/mobile-addons/play-store.png"
                     alt="Get in on Play Market"
                     className={classes.playStoreBtn}
                     lazy={false}
