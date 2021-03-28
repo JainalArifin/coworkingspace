@@ -1,13 +1,15 @@
 {
-  "name": "trackingspace",
-  "author": "jainal",
+  "name": "thefront",
+  "author": "maccarian agency",
+  "email": "hi@maccarianagency.com",
   "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "GENERATE_SOURCEMAP=false next build",
     "start": "next start",
     "prettier": "prettier --write '**/*.{js,css,html}'",
-    "export": "npm run build && next export -o _static"
+    "postinstall": "npm run assets && npm run leaflet-assets"
   },
   "eslintConfig": {
     "extends": "react-app"
