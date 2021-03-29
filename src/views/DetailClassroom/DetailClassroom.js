@@ -6,6 +6,7 @@ import {
   SectionAlternate,
   CardJobMinimal,
   CardBase,
+  CardLoading,
 } from 'components/organisms';
 import { useRouter } from 'next/router';
 import axios from 'axios';
@@ -135,14 +136,7 @@ const DetailClassroom = () => {
         </Grid>
         <CardBase>
           {loading ? (
-            <Typography
-              variant="h6"
-              color="textPrimary"
-              align="left"
-              className={classes.fontWeight700}
-            >
-              Loading ....
-            </Typography>
+            <CardLoading />
           ) : (
             <>
               <iframe
@@ -196,14 +190,11 @@ const DetailClassroom = () => {
 
             if (loading)
               return (
-                <Typography
-                  variant="h6"
-                  color="textPrimary"
-                  align="left"
-                  className={classes.fontWeight700}
-                >
-                  Loading ....
-                </Typography>
+                <>
+                  <CardLoading height={50} marginBottom={10}/>
+                  <CardLoading height={50} marginBottom={10}/>
+                  <CardLoading height={50} marginBottom={10}/>
+                </>
               );
 
             if (data.videos) {
